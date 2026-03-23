@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Algorithm Selection Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="results-data.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Benchmark narrative</p>
+        <h1>Adaptive Algorithm Selection Dashboard</h1>
+        <p class="hero-text">
+          A visual readout of how sorting and searching algorithms behave across dataset shapes,
+          input sizes, and lookup scenarios.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-stat">
+          <span class="stat-label">Benchmark runs</span>
+          <strong id="totalRuns">0</strong>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-label">Measured cases</span>
+          <strong id="totalCases">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section controls reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Explore</p>
+          <h2>Filter the experiment space</h2>
+        </div>
+        <div class="controls-card">
+          <div class="segmented-control" id="kindToggle" aria-label="Benchmark kind"></div>
+          <div class="control-grid">
+            <label class="field">
+              <span>Dataset type</span>
+              <select id="datasetSelect"></select>
+            </label>
+            <label class="field">
+              <span>Dataset size</span>
+              <select id="sizeSelect"></select>
+            </label>
+            <label class="field">
+              <span>Scenario</span>
+              <select id="scenarioSelect"></select>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Quick read</p>
+          <h2>What the selector is doing</h2>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-title">Current fastest</span>
+            <strong id="fastestMetric">-</strong>
+            <p id="fastestMeta" class="metric-meta"></p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title">Recommended</span>
+            <strong id="recommendedMetric">-</strong>
+            <p id="recommendedMeta" class="metric-meta"></p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title">Hit rate</span>
+            <strong id="hitRateMetric">-</strong>
+            <p id="hitRateMeta" class="metric-meta"></p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title">Efficiency gap</span>
+            <strong id="gapMetric">-</strong>
+            <p id="gapMeta" class="metric-meta"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Performance view</p>
+          <h2>Algorithm comparison for the selected case</h2>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <div>
+              <h3 id="caseTitle">Selected case</h3>
+              <p id="caseSubtitle" class="chart-subtitle"></p>
+            </div>
+            <div class="legend" id="legend"></div>
+          </div>
+          <div id="performanceBars" class="bars"></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Pattern map</p>
+          <h2>Fastest algorithms across all cases</h2>
+        </div>
+        <div id="caseAtlas" class="atlas"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Raw measurements</p>
+          <h2>Detailed timings</h2>
+        </div>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>Avg time</th>
+                <th>Relative</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="resultsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

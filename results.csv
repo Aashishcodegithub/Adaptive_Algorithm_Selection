@@ -1,57 +1,155 @@
-dataset_type,size,algorithm,time
-random,100,Bubble Sort,0.0004290103912353516
-random,100,Merge Sort,0.0006017208099365235
-random,100,Quick Sort,0.00038857460021972655
-random,100,Heap Sort,2.2840499877929687e-05
-random,1000,Bubble Sort,0.04907660484313965
-random,1000,Merge Sort,0.0064486503601074215
-random,1000,Quick Sort,0.004605674743652343
-random,1000,Heap Sort,0.00018520355224609374
-random,5000,Merge Sort,0.034234142303466795
-random,5000,Quick Sort,0.022274065017700195
-random,5000,Heap Sort,0.001116800308227539
-random,10000,Merge Sort,0.07010769844055176
-random,10000,Quick Sort,0.043837356567382815
-random,10000,Heap Sort,0.002613353729248047
-sorted,100,Bubble Sort,0.0002717494964599609
-sorted,100,Merge Sort,0.0005696296691894531
-sorted,100,Quick Sort,0.0003521442413330078
-sorted,100,Heap Sort,1.8072128295898437e-05
-sorted,1000,Bubble Sort,0.029883384704589844
-sorted,1000,Merge Sort,0.006399011611938477
-sorted,1000,Quick Sort,0.003405904769897461
-sorted,1000,Heap Sort,0.00019936561584472657
-sorted,5000,Merge Sort,0.03242368698120117
-sorted,5000,Quick Sort,0.018047618865966796
-sorted,5000,Heap Sort,0.0011067390441894531
-sorted,10000,Merge Sort,0.06689281463623047
-sorted,10000,Quick Sort,0.034760475158691406
-sorted,10000,Heap Sort,0.0023715019226074217
-reverse,100,Bubble Sort,0.0005135536193847656
-reverse,100,Merge Sort,0.0005847930908203125
-reverse,100,Quick Sort,0.0003590106964111328
-reverse,100,Heap Sort,1.773834228515625e-05
-reverse,1000,Bubble Sort,0.05810723304748535
-reverse,1000,Merge Sort,0.0061930656433105465
-reverse,1000,Quick Sort,0.003550815582275391
-reverse,1000,Heap Sort,0.00017938613891601562
-reverse,5000,Merge Sort,0.03344426155090332
-reverse,5000,Quick Sort,0.01802515983581543
-reverse,5000,Heap Sort,0.001027965545654297
-reverse,10000,Merge Sort,0.06755619049072266
-reverse,10000,Quick Sort,0.03526215553283692
-reverse,10000,Heap Sort,0.002189159393310547
-nearly_sorted,100,Bubble Sort,0.00032138824462890625
-nearly_sorted,100,Merge Sort,0.0005916595458984375
-nearly_sorted,100,Quick Sort,0.00034704208374023435
-nearly_sorted,100,Heap Sort,1.7976760864257814e-05
-nearly_sorted,1000,Bubble Sort,0.03445014953613281
-nearly_sorted,1000,Merge Sort,0.006389188766479492
-nearly_sorted,1000,Quick Sort,0.0039370059967041016
-nearly_sorted,1000,Heap Sort,0.00018491744995117188
-nearly_sorted,5000,Merge Sort,0.03437938690185547
-nearly_sorted,5000,Quick Sort,0.019695186614990236
-nearly_sorted,5000,Heap Sort,0.0011067867279052734
-nearly_sorted,10000,Merge Sort,0.08231306076049805
-nearly_sorted,10000,Quick Sort,0.03828663825988769
-nearly_sorted,10000,Heap Sort,0.0025465965270996095
+kind,dataset_type,size,scenario,algorithm,average_time_seconds,recommended_algorithm
+sorting,random,100,-,bubble,0.0003149499999999986,heap
+sorting,random,100,-,insertion,0.00015514160000000137,heap
+sorting,random,100,-,merge,0.0001377000000000003,heap
+sorting,random,100,-,quick,8.594180000000007e-05,heap
+sorting,random,100,-,heap,1.2916799999998507e-05,heap
+sorting,random,1000,-,bubble,0.0395155584,heap
+sorting,random,1000,-,insertion,0.01722841640000001,heap
+sorting,random,1000,-,merge,0.0016099913999999993,heap
+sorting,random,1000,-,quick,0.0011194167999999949,heap
+sorting,random,1000,-,heap,0.00014438339999999216,heap
+sorting,random,5000,-,insertion,0.467976525,heap
+sorting,random,5000,-,merge,0.00999864179999994,heap
+sorting,random,5000,-,quick,0.0072008915999998814,heap
+sorting,random,5000,-,heap,0.0011386751999999944,heap
+sorting,random,10000,-,insertion,1.7759813082,heap
+sorting,random,10000,-,merge,0.019606499799999354,heap
+sorting,random,10000,-,quick,0.011103458400000576,heap
+sorting,random,10000,-,heap,0.0018797747999997228,heap
+sorting,sorted,100,-,bubble,1.2516400000350813e-05,insertion
+sorting,sorted,100,-,insertion,7.533199999798512e-06,insertion
+sorting,sorted,100,-,merge,8.248339999994414e-05,insertion
+sorting,sorted,100,-,quick,6.674999999916054e-05,insertion
+sorting,sorted,100,-,heap,1.2866799999855517e-05,insertion
+sorting,sorted,1000,-,bubble,4.438339999985885e-05,bubble
+sorting,sorted,1000,-,insertion,7.831700000053843e-05,bubble
+sorting,sorted,1000,-,merge,0.0010521333999999882,bubble
+sorting,sorted,1000,-,quick,0.0007402417999994526,bubble
+sorting,sorted,1000,-,heap,0.0001416500000001264,bubble
+sorting,sorted,5000,-,insertion,0.0004209252000006103,insertion
+sorting,sorted,5000,-,merge,0.006042975000000084,insertion
+sorting,sorted,5000,-,quick,0.004175433400000017,insertion
+sorting,sorted,5000,-,heap,0.0008458914000005535,insertion
+sorting,sorted,10000,-,insertion,0.0008744249999999454,insertion
+sorting,sorted,10000,-,merge,0.012847949800000435,insertion
+sorting,sorted,10000,-,quick,0.008394866599999773,insertion
+sorting,sorted,10000,-,heap,0.0018003753999998652,insertion
+sorting,reverse,100,-,bubble,0.0004396163999999203,heap
+sorting,reverse,100,-,insertion,0.00031339999999957513,heap
+sorting,reverse,100,-,merge,9.088339999934192e-05,heap
+sorting,reverse,100,-,quick,6.6608399999879e-05,heap
+sorting,reverse,100,-,heap,1.3149999999839678e-05,heap
+sorting,reverse,1000,-,bubble,0.048984874800000355,heap
+sorting,reverse,1000,-,insertion,0.0362569999999998,heap
+sorting,reverse,1000,-,merge,0.00110002499999986,heap
+sorting,reverse,1000,-,quick,0.0007455084000003609,heap
+sorting,reverse,1000,-,heap,0.00013989199999997481,heap
+sorting,reverse,5000,-,insertion,0.8642813585999992,heap
+sorting,reverse,5000,-,merge,0.006417599999998913,heap
+sorting,reverse,5000,-,quick,0.004243399999999298,heap
+sorting,reverse,5000,-,heap,0.000803158199998677,heap
+sorting,reverse,10000,-,insertion,3.6161992333999997,heap
+sorting,reverse,10000,-,merge,0.013898066800000209,heap
+sorting,reverse,10000,-,quick,0.008626350000000116,heap
+sorting,reverse,10000,-,heap,0.0017166335999988292,heap
+sorting,nearly_sorted,100,-,bubble,0.00023554980000142222,heap
+sorting,nearly_sorted,100,-,insertion,5.914999999987458e-05,heap
+sorting,nearly_sorted,100,-,merge,0.00010306680000127244,heap
+sorting,nearly_sorted,100,-,quick,7.765820000003033e-05,heap
+sorting,nearly_sorted,100,-,heap,1.3383399999611356e-05,heap
+sorting,nearly_sorted,1000,-,bubble,0.024074424999997745,heap
+sorting,nearly_sorted,1000,-,insertion,0.004147691599999348,heap
+sorting,nearly_sorted,1000,-,merge,0.0014177001999996718,heap
+sorting,nearly_sorted,1000,-,quick,0.0008421665999989614,heap
+sorting,nearly_sorted,1000,-,heap,0.000135933599999305,heap
+sorting,nearly_sorted,5000,-,insertion,0.10065623320000157,heap
+sorting,nearly_sorted,5000,-,merge,0.008696666599999504,heap
+sorting,nearly_sorted,5000,-,quick,0.004562882999998408,heap
+sorting,nearly_sorted,5000,-,heap,0.0008474254000020665,heap
+sorting,nearly_sorted,10000,-,insertion,0.42454905000000026,heap
+sorting,nearly_sorted,10000,-,merge,0.01903084999999862,heap
+sorting,nearly_sorted,10000,-,quick,0.008998925000000213,heap
+sorting,nearly_sorted,10000,-,heap,0.0018862747999989437,heap
+sorting,few_unique,100,-,bubble,0.0002970998000023428,heap
+sorting,few_unique,100,-,insertion,0.0001337332000005631,heap
+sorting,few_unique,100,-,merge,0.00011077499999885276,heap
+sorting,few_unique,100,-,quick,2.4641800000324565e-05,heap
+sorting,few_unique,100,-,heap,1.32667999977798e-05,heap
+sorting,few_unique,1000,-,bubble,0.03469709980000033,heap
+sorting,few_unique,1000,-,insertion,0.015177166800000919,heap
+sorting,few_unique,1000,-,merge,0.0014862668000006352,heap
+sorting,few_unique,1000,-,quick,0.0002031168000016237,heap
+sorting,few_unique,1000,-,heap,0.00015836680000091974,heap
+sorting,few_unique,5000,-,insertion,0.42364436680000067,heap
+sorting,few_unique,5000,-,merge,0.009103933599999437,heap
+sorting,few_unique,5000,-,quick,0.0010263418000008074,heap
+sorting,few_unique,5000,-,heap,0.0008946831999992356,heap
+sorting,few_unique,10000,-,insertion,1.5293565332,heap
+sorting,few_unique,10000,-,merge,0.019536641599999884,heap
+sorting,few_unique,10000,-,quick,0.0023957913999993253,heap
+sorting,few_unique,10000,-,heap,0.0018447418000008043,heap
+searching,sorted,100,front,linear,1.322915999992347e-07,exponential
+searching,sorted,100,front,binary,5.554497999980867e-07,exponential
+searching,sorted,100,front,jump,4.3739160000058065e-07,exponential
+searching,sorted,100,front,exponential,9.855819999984305e-08,exponential
+searching,sorted,100,middle,linear,1.090633399999774e-06,binary
+searching,sorted,100,middle,binary,5.340667999988114e-07,binary
+searching,sorted,100,middle,jump,1.6865500000008637e-06,binary
+searching,sorted,100,middle,exponential,7.399501999984182e-07,binary
+searching,sorted,100,end,linear,1.9312083999977857e-06,binary
+searching,sorted,100,end,binary,5.910749999983977e-07,binary
+searching,sorted,100,end,jump,3.589658399998541e-06,binary
+searching,sorted,100,end,exponential,8.960916000020802e-07,binary
+searching,sorted,100,missing,linear,1.9437418000023854e-06,binary
+searching,sorted,100,missing,binary,6.44700200000159e-07,binary
+searching,sorted,100,missing,jump,2.7851995999995437e-06,binary
+searching,sorted,100,missing,exponential,9.611414000005424e-07,binary
+searching,sorted,1000,front,linear,1.288502000022618e-07,exponential
+searching,sorted,1000,front,binary,8.369749999999954e-07,exponential
+searching,sorted,1000,front,jump,4.407331999985331e-07,exponential
+searching,sorted,1000,front,exponential,9.886680000192882e-08,exponential
+searching,sorted,1000,middle,linear,1.0770675000000552e-05,binary
+searching,sorted,1000,middle,binary,8.698418000008701e-07,binary
+searching,sorted,1000,middle,jump,5.190866599998856e-06,binary
+searching,sorted,1000,middle,exponential,1.1237832000006164e-06,binary
+searching,sorted,1000,end,linear,2.2859050200000297e-05,binary
+searching,sorted,1000,end,binary,9.399164000015503e-07,binary
+searching,sorted,1000,end,jump,9.805691600000444e-06,binary
+searching,sorted,1000,end,exponential,1.4039582000009432e-06,binary
+searching,sorted,1000,missing,linear,2.303901659999923e-05,binary
+searching,sorted,1000,missing,binary,1.0095752000012226e-06,binary
+searching,sorted,1000,missing,jump,8.974858400000585e-06,binary
+searching,sorted,1000,missing,exponential,1.4191081999996413e-06,binary
+searching,sorted,5000,front,linear,1.2772479999938469e-07,exponential
+searching,sorted,5000,front,binary,1.0661997999989124e-06,exponential
+searching,sorted,5000,front,jump,4.2945840000214734e-07,exponential
+searching,sorted,5000,front,exponential,9.426680000075293e-08,exponential
+searching,sorted,5000,middle,linear,5.9069491599997546e-05,binary
+searching,sorted,5000,middle,binary,1.0518496000003098e-06,binary
+searching,sorted,5000,middle,jump,1.463569160000162e-05,binary
+searching,sorted,5000,middle,exponential,1.5995583999995233e-06,binary
+searching,sorted,5000,end,linear,0.00011652891659999939,binary
+searching,sorted,5000,end,binary,1.1708503999997787e-06,binary
+searching,sorted,5000,end,jump,2.1831825399999615e-05,binary
+searching,sorted,5000,end,exponential,1.5838750000014556e-06,binary
+searching,sorted,5000,missing,linear,0.00011688140839999761,binary
+searching,sorted,5000,missing,binary,1.2247164000001477e-06,binary
+searching,sorted,5000,missing,jump,1.889173319999884e-05,binary
+searching,sorted,5000,missing,exponential,1.672133200000303e-06,binary
+searching,sorted,10000,front,linear,1.451836000015305e-07,exponential
+searching,sorted,10000,front,binary,2.804699800000776e-06,exponential
+searching,sorted,10000,front,jump,4.221391600000857e-06,exponential
+searching,sorted,10000,front,exponential,1.0125820000013164e-07,exponential
+searching,sorted,10000,middle,linear,0.00013159629160000035,binary
+searching,sorted,10000,middle,binary,1.7001679999992802e-07,binary
+searching,sorted,10000,middle,jump,2.3466408199999476e-05,binary
+searching,sorted,10000,middle,exponential,1.6288998000007383e-06,binary
+searching,sorted,10000,end,linear,0.00024178345819999975,binary
+searching,sorted,10000,end,binary,1.1263585999984117e-06,binary
+searching,sorted,10000,end,jump,3.644254139999958e-05,binary
+searching,sorted,10000,end,exponential,1.679291599997157e-06,binary
+searching,sorted,10000,missing,linear,0.00024593360020000004,binary
+searching,sorted,10000,missing,binary,1.3771754000003965e-06,binary
+searching,sorted,10000,missing,jump,2.6308783000001767e-05,binary
+searching,sorted,10000,missing,exponential,1.786791600000015e-06,binary
